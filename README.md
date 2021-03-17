@@ -1,5 +1,6 @@
 # COVID Riteaid Nodejs
  Notifier for COVID vaccine at riteaid locations
+ 
  This project is listed under an MIT license for free use
  
 # Dependencies
