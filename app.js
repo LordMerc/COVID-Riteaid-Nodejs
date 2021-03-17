@@ -11,7 +11,6 @@ async function StartApp() {
             var response = await axios.get(`https://www.riteaid.com/services/ext/v2/vaccine/checkSlots?storeNumber=${current_store}`)
             var slots = response.data.Data
             var incache = cache.find(x => x == current_store)
-            print(current_store,incache)
             if (slots[0] != false && incache == undefined) { // Vaccine IS in stock, and you've not been notified yet
                 cache.push(current_store)
                 toast({
