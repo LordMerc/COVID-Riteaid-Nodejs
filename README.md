@@ -3,6 +3,11 @@
  
  This project is listed under an MIT license for free use
  
+ # Instructions
+ List your stores' store number inside the app.js file in the stores array, separated by a comma.
+ After, run the following command:
+ 
+ > **node app**
 # Dependencies
 You **WILL** need Node.Js installed found here: https://nodejs.org/en/
 
