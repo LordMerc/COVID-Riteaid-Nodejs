@@ -10,3 +10,7 @@ You will also need to install the following packages:
 Axios
 
 > **npm i axios**
+
+Powertoast
+
+> **npm i powertoast**
