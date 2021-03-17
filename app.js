@@ -3,7 +3,7 @@ const toast = require('powertoast')
 const waitFor = (ms) => new Promise(r => setTimeout(r, ms * 1000))
 const stores = [] 
 // ^ list your store numbers as such: const stores = [100,102,103]
-let cache = []
+const cache = []
 async function StartApp() {
     while (true) {
         for (store in stores) {
