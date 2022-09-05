@@ -7,10 +7,10 @@ const cache = []
 async function StartApp() {
     while (true) {
         for (store in stores) {
-            var current_store = stores[store]
-            var response = await axios.get(`https://www.riteaid.com/services/ext/v2/vaccine/checkSlots?storeNumber=${current_store}`)
-            var slots = response.data.Data
-            var incache = cache.find(x => x == current_store)
+            let current_store = stores[store]
+            let response = await axios.get(`https://www.riteaid.com/services/ext/v2/vaccine/checkSlots?storeNumber=${current_store}`)
+            let slots = response.data.Data
+            let incache = cache.find(x => x == current_store)
             if (slots[0] != false && incache == undefined) { // Vaccine IS in stock, and you've not been notified yet
                 cache.push(current_store)
                 toast({
